@@ -1,5 +1,7 @@
 const Rx = require('rxjs/Rx')
 
+// Array size doesn't really matter when you're only computing the overhead of the observables.
+// Adjust this value to the average number of emissions on your application's observables.
 const arraySize = 20;
 const arrays = 300000; // 1e6 + 500000;
 
